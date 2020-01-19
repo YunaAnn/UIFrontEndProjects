@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+	<meta name="description" content="Anna Grzywnowicz | Portfolio">
+	<meta name="keywords" content="Front-end, HTML, CSS, javascipt, github">
+	<meta name="author" content="YunaAnn">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title> Portfolio &ndash; Anna Grzywnowicz </title>
+		<!-- CSS -->
+		<link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+		<link rel="stylesheet" href="menu_assets/main.css"> 
+		<!-- Other -->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css"/>
+</head>
+
+<body onload="loading()">
+
+    <div id="loader"></div>	
+
+    <div id="page" class="animate">
+
+        <div class = "container" style="margin-top: 100px;">
+
+            <h1> UIFrontEndProjects by <a target="_blank" rel="noopener noreferrer" href="https://github.com/YunaAnn"> YunaAnn </a> </h1>
+            <p> Repository containing my UI Front-end projects, which can be viewed by using the menu below.</p>
+            
+        </div>
+        <div class = "container">    
+            <div class = "main-menu">      
+            <h3 onclick="document.getElementsByTagName('nav')[0].className = 'menu menu_active'">&Tilde;menu&Tilde;</h3>
+            <nav class="menu">
+              <p onclick="document.getElementsByTagName('nav')[0].className = 'menu'">&Tilde;close&Tilde;</p>
+              <br>
+              <ol>    
+                <li class="menu-item">
+                  <h4> Portfolio</h4>
+                  <ol class="sub-menu">
+                    <li class="menu-item"><a target="_blank" rel="noopener noreferrer" href="#0">Demo</a></li>
+                    <li class="menu-item"><a target="_blank" rel="noopener noreferrer" href="#0">Code</a></li>
+                  </ol>
+                </li>
+                <li class="menu-item">
+                  <h4> Travel Website</h4>
+                  <ol class="sub-menu">
+                    <li class="menu-item"><a target="_blank" rel="noopener noreferrer" href="#0">Demo</a></li>
+                    <li class="menu-item"><a target="_blank" rel="noopener noreferrer" href="#0">Code</a></li>
+                  </ol>
+                </li>
+              </ol>
+            </nav>
+            </div>
+         </div>   
+        <!-- JavaScript-->
+        <script src="menu_assets/main.js"></script>
+    </div>    
+
+</body>
+
+</html>
