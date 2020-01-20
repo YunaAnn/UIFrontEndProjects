@@ -1,0 +1,286 @@
+body
+ {
+  background-color: #f2f2f2;
+  color:#272626;
+  font-family: 'Relaway';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden; 
+  }
+
+html 
+{
+  scroll-behavior: smooth;
+}
+
+a
+{
+    color:rgb(202, 158, 62);
+}
+
+.row .col-sm-4 i
+{
+    color:rgb(133, 45, 45);
+}
+
+a:hover
+{
+    color:rgb(165, 122, 29);
+}
+
+.form .btn 
+{
+  width: 30%;
+  background-color:rgb(202, 158, 62);
+  color:#f2f2f2;
+  cursor:pointer;
+  font-weight: bold;
+}
+
+.form .btn:hover
+{
+  color:rgb(165, 122, 29);
+  color:#f2f2f2;
+}
+
+.welcome
+{
+    background: url("../img/1.png") center center/cover; 
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.welcome h1
+{
+    color:#f2f2f2;
+    font-weight: bold;
+    font-size: 3vw;
+    padding-top: 10%;
+    text-align: center;
+    letter-spacing: 4px;
+    background: linear-gradient(90deg, #272626, #fff, #272626);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: animate 6s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+
+
+  @keyframes animate 
+  {
+    0% 
+    {
+      background-position: -500%;
+    }
+    100% 
+    {
+      background-position: 500%;
+    }
+  }
+
+  .welcome h4
+  {
+    font-size: 2vw;
+    padding-top: 25vh;
+    text-align: center;
+    color:#f2f2f2;
+  }
+
+  .welcome a
+{
+    position: absolute;
+    bottom: 80px;
+    padding-left: 50vw;
+    color:#f2f2f2;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+ .welcome a:hover 
+{
+  border-bottom: 2px dotted #f2f2f2;
+  padding-bottom: 5px;
+  transition: all 0.2s;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.container .photo img
+{
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#project1
+{
+  background-image: url(../img/7.png);
+  display: block;
+  margin: 0 auto;
+  text-indent: -9999px;
+  width: 350px;
+  height: 250px;
+}
+
+#project2
+{
+  background-image: url(../img/8.png);
+  display: block;
+  margin: 0 auto;
+  text-indent: -9999px;
+  width: 350px;
+  height: 250px;
+}
+
+#project3
+{
+  background-image: url(../img/9.png);
+  display: block;
+  margin: 0 auto;
+  text-indent: -9999px;
+  width: 350px;
+  height: 250px;
+}
+
+.containerLink
+{
+  position: relative;
+  width: 100%;
+}
+
+.text 
+{
+  color: #f2f2f2;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.overlay
+ {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgb(48, 92, 52);
+}
+
+.containerLink:hover .overlay 
+{
+  opacity: 1;
+}
+
+
+.skills
+{
+    background-color:#272626;
+    color:#f2f2f2;
+}
+
+.links
+{
+    text-align: center;
+}
+
+.row .col-sm-4 p
+{
+    font-weight: bold;
+    color:rgb(133, 45, 45);
+}
+.row .col-sm-4 p, .row .col-sm-4 ul>li, .row .col-sm-4 h6
+{
+    text-align: left;
+}
+
+.form
+{
+    background-color:#333;
+    text-align: center;
+}
+
+form
+{
+color:#f2f2f2;
+}
+
+.footer 
+{
+  width: 100%;
+  height: 60px; 
+  line-height: 60px;
+  background-color: #f2f2f2;
+}
+
+/***PARALLAX****/
+.img-1, .img-2, .img-3, .img-4
+{
+    position: relative;
+    opacity: 0.80;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+  }
+  .img-1 
+  {
+    background-image: url("../img/3.png");
+    min-height: 200px;
+  }
+  
+  .img-2  
+  {
+    background-image: url("../img/4.png");
+    min-height: 200px;
+  }
+  
+  .img-3 
+  {
+    background-image: url("../img/5.png");
+    min-height: 200px;
+  }
+
+  .img-4
+  {
+    background-image: url("../img/6.png");
+    min-height: 200px;
+  }
+
+  .caption
+  {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+  }
+
+  /******TURNING OFF PARALLAX FOR TABLETS AND PHONES******/
+@media only screen and (max-device-width: 1024px) 
+{
+    .img-1, .img-2, .img-3, .img-4
+    {
+      background-attachment: scroll;
+    }
+
+  /*********RESPONSIVE********************/
+@media only screen and (max-width: 1024px) 
+{
+  [class*="col-"] 
+  {
+    width: 100%;
+  }
+ }
+}
