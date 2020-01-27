@@ -66,6 +66,11 @@ background-color: #2e8080;
   margin-right: auto; 
 }
 
+.jumbotron
+{
+  color:#f2f2f2;
+}
+
 /****IMG*****/
 .containerImg
 {
