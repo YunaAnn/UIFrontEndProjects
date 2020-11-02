@@ -3,121 +3,25 @@ body
   background-color: #272626;
   color:#272626;
   font-family: 'Courier';
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden; 
-  height: 100vh;
   }
 
-h1 
+.lead { font-weight: bold; text-transform: uppercase; letter-spacing: .5rem; }
+
+.container { padding: 2rem 3rem 2rem 3rem; }
+
+.container:first-child
 {
-    letter-spacing: 5px;
-    text-transform: uppercase;
-    font-size: 2vw;
-    font-weight:bold;
+  background-color: #e2e2e2;
+  margin-top: 2rem;
 }
 
-h6
-{
-  text-transform: uppercase;
-  font-weight:bold;
-}
+a { color: #3c8e97; }
 
+a:hover { color:#3c8e97 ; text-decoration: none; border-bottom: 6px dotted #3c8e97;}
 
-.container
-{
-  background-color: #f2f2f2;
-  margin-top: 10px;
-  padding-top: 10px;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-bottom: 10px;
-}
+/*********MENU********************/
 
-.container a:link, .container a:visited
-{
-  position: static;
-  font-size: 25px; 
-  color: #347C84; 
-  text-decoration: none;
-}
-
-.container a:hover, .container a:active
-{
-  color: rgb(63, 184, 197); 
-  text-decoration: none;
-}
-
-.container:nth-child(1)
-{
-  -webkit-box-shadow: 10px 10px 1px 0px rgba(0,0,0,0.75);
-  -moz-box-shadow: 10px 10px 1px 0px rgba(0,0,0,0.75);
-  box-shadow: 10px 10px 1px 0px rgba(0,0,0,0.75);
-}
-
-.container:nth-child(2)
-{
-  background-color: transparent;
-}
-
-/*********LOADER********************/
-#loader 
-{
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  z-index: 1;
-  width: 200px;
-  height: 200px;
-  margin: -75px 0 0 -75px;
-  border: 16px solid #347C84;
-  border-radius: 50%;
-  border-top: 16px solid #272626;
-  width: 150px;
-  height: 150px;
-  -webkit-animation: spin 2s linear infinite;
-  animation: spin 2s linear infinite;
-}
-
-@-webkit-keyframes spin 
-{
-  0% { -webkit-transform: rotate(0deg); }
-  100% { -webkit-transform: rotate(360deg); }
-}
-
-@keyframes spin 
-{
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
-
-.animate
-{
-  position: relative;
-  -webkit-animation-name: animatebottom;
-  -webkit-animation-duration: 1s;
-  animation-name: animatebottom;
-  animation-duration: 1s
-}
-
-@-webkit-keyframes animatebottom 
-{
-  from { bottom:-100px; opacity:0 } 
-  to { bottom:0px; opacity:1 }
-}
-
-@keyframes animatebottom 
-{ 
-  from{ bottom:-100px; opacity:0 } 
-  to{ bottom:0; opacity:1 }
-}
-
-#page
-{
-  display: none;
-}
-
-/**menu**/
 nav 
 {
   line-height: 1.4;
@@ -128,10 +32,10 @@ nav
   left: calc(50vw - 200px);
   position: fixed;
   border-radius: 16px;
-  box-shadow: 0 0 60px -15px black;
+  box-shadow: 0 0 60px -15px #1f1e1ebf;
   transform: scale(0) rotate(360deg);
   transition: all 0.75s;
-  font-size: 18px;
+  font-size: 1.2rem;
 }
 
 .main-menu nav.menu_active
@@ -150,14 +54,14 @@ nav
  {
   margin: 10px 0 0 20px;
   border-left: 1px solid #4d4d4c;
-  color: #347C84;
+  color: #3c8e97;
 }
 
 .main-menu nav > ol > li > ol > li 
 {
   margin: 7px 0;
   padding-left: 20px;
-  color:#347C84;
+  color:#3c8e97;
   font-weight: bold;
 }
 
@@ -171,7 +75,7 @@ nav
   position: fixed;
   font-size: 60px;
   color: #f2f2f2;
-  top: calc(50vh - 40px);
+  top: calc(80vh - 40px);
   left: calc(50vw - 126px);
   cursor: pointer;
   transition: all 0.3s;
@@ -181,7 +85,7 @@ nav
 {
   border-bottom: 6px dotted #f2f2f2;
   padding-bottom: 10px;
-  top: calc(50vh - 50px);
+  top: calc(80vh - 50px);
 }
 
 .main-menu p 
@@ -200,8 +104,42 @@ nav
   padding-bottom: 5px;
 }
 
-.main-menu h4 
+.main-menu h4 { color: #f2f2f2; font-weight: bold; }
+
+
+/*********LOADER********************/
+#loader 
 {
-  color: #f2f2f2;
-  font-weight: bold;
+  position: absolute;
+  left: 50%;
+  top: 45%;
+  z-index: 1;
+  width: 4.5rem;
+  height: 4.5rem;
+  border: 1rem solid #3c8e97;
+  border-radius: 50%;
+  border-top: 1rem solid #272626;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
 }
+
+@-webkit-keyframes spin { 0% { -webkit-transform: rotate(0deg); } 100% { -webkit-transform: rotate(360deg); }}
+
+@keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); }}
+
+.animate
+{
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom { from { bottom:-100px; opacity:0 } to { bottom:0px; opacity:1 }}
+
+@keyframes animatebottom { from { bottom:-100px; opacity:0 } to { bottom:0; opacity:1 }}
+
+#page { display: none; }
+
+/*****************************/
