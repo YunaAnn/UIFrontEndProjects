@@ -16,9 +16,13 @@ body
   margin-top: 2rem;
 }
 
-a { color: #3c8e97; }
 
+i { font-size: 2.2rem; padding-right:.5rem;}
+
+a { color: #3c8e97; }
 a:hover { color:#3c8e97 ; text-decoration: none; border-bottom: 6px dotted #3c8e97;}
+.menu-item a:hover { border-bottom: none; color:#57a0a8;}
+
 
 /*********MENU********************/
 
