@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+	<meta name="description" content="YunaAnn | UIFrontEndProjects">
+	<meta name="keywords" content="Front-end, HTML, CSS, javascipt, github, react">
+	<meta name="author" content="YunaAnn">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> UIFrontEndProjects &ndash; YunaAnn </title>
+   <!--LIBRARIES-->
+        <!--REACT-->
+        <script src="https://unpkg.com/react@15.7.0/dist/react.js"></script>
+        <!--REACT DOM-->
+        <script src="https://unpkg.com/react-dom@15.7.0/dist/react-dom.js"></script>
+        <!--BABEL-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.25.0/babel.min.js"></script>
+	<!-- CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="main.css"> 
+	<!-- Other -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css"/>
+</head>
+
+
+<body onload="loading()">
+
+  <div id="loader"></div>	
+
+  <div id="page" class="animate">
+        <div id="app"> React has not rendered yet! </div>
+  </div>
+
+  <script type="text/babel">
+
+      function MainMenu()
+      {return(
+        <div>
+            <AboutPage/>
+            <Menu/>
+        </div>
+        );
+      }
+
+            function AboutPage()
+            {return(
+                    <div className="container">
+                        <TextMain/>
+                        <ButtonMain/>
+                    </div>
+              );
+            }
+
+                    function TextMain()
+                              {return(
+                                  <div>
+                                    <p className="lead">  UI FrontEnd Projects by <a target="_blank" rel="noopener noreferrer" href="https://github.com/YunaAnn"> YunaAnn </a> </p>
+                                    <h6> HTML5, CSS3, JavaScript, Boostrap 4.0, React, Font Awesome </h6>
+                                    <h6> Repository containing my UI Front-end projects, which can be viewed by using the menu below. </h6>
+                                  </div>
+                                  );
+                              }
+
+                    function ButtonMain()
+                              {return(
+                                    <a target="_blank" rel="noopener noreferrer" href="index.html"><button type="button" className="btn btn-info"> No React.JS with Babel version </button></a>
+                                  );
+                              }         
+
+            function Menu()
+            {return(
+              <div className = "main-menu">      
+              <h3 onClick={menuActive}>*menu*</h3>
+                    <nav className="menu">
+                        <p onClick={menuClose}>*close*</p>
+                        <ol>     
+                          <Portfolio/>
+                          <BlogTemplate/>
+                        </ol>
+                    </nav>         
+          </div>
+              );
+            }
+
+                    function Portfolio()
+                    {return(
+                      <li className="menu-item">
+                        <h4> Portfolio </h4>
+                        <a target="_blank" rel="noopener noreferrer" href="Portfolio/index.html"><i className="fas fa-external-link-alt"></i>  </a>
+                        <a target="_blank" rel="noopener noreferrer" href="https://github.com/YunaAnn/UIFrontEndProjects/tree/master/Portfolio"><i className="fas fa-code"></i> </a>
+                        <i className="fab fa-react"></i> 
+                      </li>
+                    );
+                    }
+
+                    function BlogTemplate()
+                    {return(
+                      <li className="menu-item">
+                        <h4> Blog Template </h4>
+                          <a target="_blank" rel="noopener noreferrer" href="BlogTemplate/index.html"><i className="fas fa-external-link-alt"></i>  </a>
+                          <a target="_blank" rel="noopener noreferrer" href="https://github.com/YunaAnn/UIFrontEndProjects/tree/master/BlogTemplate"><i className="fas fa-code"></i> </a>
+                          <i className="fab fa-react"></i> 
+                      </li>
+                    );
+                    }
+          
+      ReactDOM.render
+      (
+         <MainMenu/>,
+         document.getElementById("app")
+      );
+ 
+  </script>
+
+
+    <!-- JavaScript-->
+    <script src="main.js"></script>
+
+</body>
+
+</html>

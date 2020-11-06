@@ -79,7 +79,7 @@ nav
   position: fixed;
   font-size: 60px;
   color: #f2f2f2;
-  top: calc(80vh - 40px);
+  top: calc(90vh - 40px);
   left: calc(50vw - 126px);
   cursor: pointer;
   transition: all 0.3s;
@@ -89,7 +89,7 @@ nav
 {
   border-bottom: 6px dotted #f2f2f2;
   padding-bottom: 10px;
-  top: calc(80vh - 50px);
+  top: calc(90vh - 50px);
 }
 
 .main-menu p 

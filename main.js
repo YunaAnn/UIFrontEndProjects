@@ -30,3 +30,13 @@ function expand()
    i=0;
   }
 }
+
+function menuActive()
+{
+    document.getElementsByTagName("nav")[0].className = "menu menu_active";
+}
+
+function menuClose()
+{
+  document.getElementsByTagName("nav")[0].className = "menu";
+}
